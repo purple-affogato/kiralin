@@ -21,7 +21,7 @@ function Header (){
             </Link>
             
             <button type="button" className="HeaderItem">
-                <Link to="companies" className="HeaderLink">Search Companies</Link>
+                <Link to="companies" className="HeaderLink">Companies</Link>
             </button>
         </header>
     );
