@@ -3,7 +3,7 @@ import React from "react";
 import Template from "./Template.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import Homepage from "./Homepage.jsx";
-import SearchCompanies from "./SearchCompanies.jsx";
+import Companies from "./Companies.jsx";
 import './index.css'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Routes>
               <Route path="/" element={<Template />} errorElement={<ErrorPage/>}>
                 <Route index element={<Homepage/>}/>
-                <Route path="companies" element={<SearchCompanies/>}/>
+                <Route path="companies" element={<Companies/>}/>
               </Route>
         </Routes>
       </div>

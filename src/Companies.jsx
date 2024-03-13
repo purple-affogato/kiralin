@@ -1,9 +1,9 @@
 import React from "react";
 
-function SearchCompanies (){
+function Companies (){
     return(
         <p>Add search bar here</p>
     );
 }
 
-export default SearchCompanies;
+export default Companies;
