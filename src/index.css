@@ -19,17 +19,17 @@
 }
 
 .HeaderItem :hover {
-  background-color: #FEC7B4;
+  background-color: #FFF3C7;
   height: 100%;
-  color: #F7418F
+  color: #F7418F;
 }
 
 .HeaderLink {
   /* display: block; */
   height: 100%;
-  color: #FFF3C7;
+  color: #FEC7B4;
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-family: "CreatoDisplay-Regular";
   padding: 100% 1em;
   text-align: center;
@@ -49,4 +49,17 @@
 @font-face {
   font-family: "CreatoDisplay-Regular";
   src: url(./fonts/CreatoDisplay-Regular.otf), format('.otf'), local("CreatoDisplay-Regular");
+}
+
+h1 {
+  font-family: "Rosehot";
+  color: #F7418F;
+}
+
+p {
+  font-family: "CreatoDisplay-Regular";
+}
+
+.SiteBody {
+  margin-inline: 4em;
 }
