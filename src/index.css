@@ -1,0 +1,52 @@
+.Header {
+  display: block;
+  overflow: hidden;
+  background-color: #F7418F;
+  height: 5em;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+}
+
+.HeaderItem {
+  display: inline-block;
+  background-color: #F7418F;
+  height: 100%;
+  margin: 0%;
+  border-width: 0;
+  vertical-align: top;
+  padding: 0%;
+}
+
+.HeaderItem :hover {
+  background-color: #FEC7B4;
+  height: 100%;
+  color: #F7418F
+}
+
+.HeaderLink {
+  /* display: block; */
+  height: 100%;
+  color: #FFF3C7;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-family: "CreatoDisplay-Regular";
+  padding: 100% 1em;
+  text-align: center;
+}
+
+.HeaderLogo {
+  height: 100%;
+  display: inline-block;
+  margin-inline: 1em;
+}
+
+@font-face {
+  font-family: "Rosehot";
+  src: local("Rosehot"), url(./fonts/Rosehot.ttf), format(".ttf");
+}
+
+@font-face {
+  font-family: "CreatoDisplay-Regular";
+  src: url(./fonts/CreatoDisplay-Regular.otf), format('.otf'), local("CreatoDisplay-Regular");
+}
