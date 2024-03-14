@@ -2,7 +2,10 @@ import React from "react";
 
 function Companies (){
     return(
-        <p>Add search bar here</p>
+        <div className="SiteBody">
+            <p>Add search bar here</p>
+        </div>
+        
     );
 }
 
