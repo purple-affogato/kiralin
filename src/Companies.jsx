@@ -44,20 +44,27 @@ function Companies (){
             type="text" 
             id="search"
             name="search"
-            placeholder="Search company names here"
+            placeholder="Search companies"
             onChange={handleChange}
-            value={searchInput}/>
-            
-            <ul>
-                {results.map(function(company) {
-                    return(
-                        <li key={company.companyname}>{company.companyname}</li>
-                    ); 
-                })}
-            </ul>
+            value={searchInput}
+            className="searchBar"/>
+            {results.map(function(company) {
+                return(
+                    <SearchEntry name={company.companyname} industry={company.industry} id={company.id} key={company.id} />
+                ); 
+            })}
 
         </div>
         
+    );
+}
+
+function SearchEntry ({name, industry, id}){
+    return(
+        <div className="searchEntry">
+            <h2>{name}</h2>
+            <p>Industry: {industry}</p>
+        </div>
     );
 }
 
