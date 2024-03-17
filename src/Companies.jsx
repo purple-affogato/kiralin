@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "./supabaseClient";
+import { Link } from "react-router-dom";
 
 function Companies (){
     const [companies, setCompanies] = useState([]);
@@ -32,7 +33,7 @@ function Companies (){
 
     async function search(str) {
         const {data, error} = await supabase.from('companies').select('id, companyname, industry').ilike('companyname','%'+str+'%');
-        console.log(data);
+        // console.log(data);
         if (data.length > 0){
             setResults(data);
         }
@@ -62,8 +63,10 @@ function Companies (){
 function SearchEntry ({name, industry, id}){
     return(
         <div className="searchEntry">
-            <h2>{name}</h2>
-            <p>Industry: {industry}</p>
+            <Link to={id.toString()} style={{textDecoration: "none", color: "#400820"}}>
+                <h2>{name}</h2>
+                <p>Industry: {industry}</p>
+            </Link>
         </div>
     );
 }
