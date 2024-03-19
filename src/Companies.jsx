@@ -33,7 +33,7 @@ function Companies (){
 
     async function search(str) {
         const {data, error} = await supabase.from('companies').select('id, companyname, industry').ilike('companyname','%'+str+'%');
-        // console.log(data);
+        // console.log(error);
         if (data.length > 0){
             setResults(data);
         }
