@@ -92,4 +92,39 @@ p {
 
 h2 {
   font-family: "CreatoDisplay-Regular";
+  color: #400820;
+}
+
+.popup-content {
+  justify-content: center;
+  background-color: #FEC7B4;
+  padding: 2em;
+  margin: auto;
+  width: 50%;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);;
+}
+
+.popup-button {
+  font-size: medium;
+  font-family: "CreatoDisplay-Regular";
+  background-color: #FC819E;
+  color: #FFF3C7;
+  border-width: 0;
+  padding-inline: 1em;
+}
+
+.popup-button :hover {
+  background-color: #F7418F;
+}
+
+label {
+  font-family: "CreatoDisplay-Regular";
+  color: #400820;
+}
+
+hr {
+  color: #FC819E;
 }
