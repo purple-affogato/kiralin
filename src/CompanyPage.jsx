@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { supabase } from "./supabaseClient";
 import WorkplaceCulture from "./WorkplaceCulture";
+import ERGSection from "./ERGSection";
 
 export default function CompanyPage() {
     let {companyID} = useParams();
@@ -33,7 +34,7 @@ export default function CompanyPage() {
             <p>Industry: {company.industry}</p>
             {/* <p>Company ID: {companyID}</p> */}
             <WorkplaceCulture y={company.wc1_y} n={company.wc1_n} pos={company.wc2_pos} neg={company.wc2_neg} id={companyID} />
-            <h2>Employee Resource Groups (ERGs)</h2>
+            <ERGSection y={company.erg_y} n={company.erg_n} id={companyID} />
             <h2>Feedback Mechanisms</h2>
 
             <h2>Diversity Policies</h2>
