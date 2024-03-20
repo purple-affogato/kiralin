@@ -32,8 +32,7 @@ export default function WorkplaceCulture({y, n, pos, neg, id}){
 
     async function updateQ1Data(){
         if (option1 == "y") {
-            const {data} = await supabase.from("companies").update({ wc1_y: y+1}).eq('id', id);
-            console.log(data);
+            const {error} = await supabase.from("companies").update({ wc1_y: y+1}).eq('id', id);
         }
         else {
             const {error} = await supabase.from('companies').update({ wc1_n: n+1}).eq('id', id);
