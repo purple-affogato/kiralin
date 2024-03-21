@@ -9,6 +9,10 @@ function Template () {
         <div style={{height: '100%', display: "block",}}>
             <Header />
             <Outlet />
+            <footer>
+                <p>Kiralin by purple-affogato</p>
+                <p>Submission for Women in STEM Hackathon (2024).</p>
+            </footer>
         </div>
     );
 }
