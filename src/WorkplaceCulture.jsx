@@ -58,7 +58,7 @@ export default function WorkplaceCulture({y, n, pos, neg, id}){
             <h2>Workplace Culture</h2>
             <p> {y+n == 0 ? 
                 "There is no data on how welcome female and nonbinary employees feel at this workplace yet." 
-                : percent1+"% of people on Kiralin felt welcome as a women or nonbinary person at this company."}
+                : percent1+"% of people on Kiralin felt welcome as a woman or nonbinary person at this company."}
             </p>
 
             <p> {pos+neg == 0 ? 
