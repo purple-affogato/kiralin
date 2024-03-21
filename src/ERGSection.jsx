@@ -14,7 +14,6 @@ export default function ERGSection({y, n, id}){
 
     function handleSubmit(){
         if (option != ""){
-            //update database & use cookies
             setOpen(false);
             updateQ1Data();
         }
