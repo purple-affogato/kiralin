@@ -63,7 +63,8 @@ p {
 
 .SiteBody {
   margin-inline: 20%;
-  margin-top: 2em;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .searchBar {
@@ -120,4 +121,13 @@ h2 {
 label {
   font-family: "CreatoDisplay-Regular";
   color: #400820;
+}
+
+footer {
+  margin-inline: 0;
+  background-color: #FEC7B4;
+  color: #FFF3C7;
+  padding-inline: 20%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
