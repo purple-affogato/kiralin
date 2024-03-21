@@ -20,7 +20,6 @@ export default function WorkplaceCulture({y, n, pos, neg, id}){
 
     function handleSubmit(){
         if (option1 != "" && option2 != ""){
-            //update database & use cookies
             setOpen(false);
             updateQ1Data();
             updateQ2Data();
