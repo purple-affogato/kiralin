@@ -9,7 +9,7 @@ import CompanyPage from "./CompanyPage.jsx";
 
 function App() {
   return (
-      <div style={{height: '100%', display: "block",}}>
+      <div style={{height: '100%', display: "block",width: '100%'}}>
         <Routes>
               <Route path="/" element={<Template />} errorElement={<ErrorPage/>}>
                 <Route index element={<Homepage/>}/>
