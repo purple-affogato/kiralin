@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { supabase } from "./supabaseClient";
 import WorkplaceCulture from "./WorkplaceCulture";
 import ERGSection from "./ERGSection";
+import FMSection from "./FMSection";
 
 export default function CompanyPage() {
     let {companyID} = useParams();
@@ -32,10 +33,9 @@ export default function CompanyPage() {
         <div className="SiteBody">
             <h1>{company.companyname}</h1>
             <p>Industry: {company.industry}</p>
-            {/* <p>Company ID: {companyID}</p> */}
             <WorkplaceCulture y={company.wc1_y} n={company.wc1_n} pos={company.wc2_pos} neg={company.wc2_neg} id={companyID} />
             <ERGSection y={company.erg_y} n={company.erg_n} id={companyID} />
-            <h2>Feedback Mechanisms</h2>
+            <FMSection y1={company.fm1_y} n1={company.fm1_n} y2={company.fm2_y} n2={company.fm2_n} id={companyID} />
 
             <h2>Diversity Policies</h2>
             <p>{company.dp1 ? "There diversity policies being implemented at this company." : "There are no diversity policies being implemented at this company."}</p>
