@@ -125,9 +125,9 @@ label {
 
 footer {
   margin-inline: 0;
-  background-color: #FEC7B4;
   color: #FFF3C7;
   padding-inline: 20%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100%;
 }

@@ -6,7 +6,7 @@ import logo from "./icons/logo512.png"
 function Template () {
 
     return (
-        <div style={{height: '100%', display: "block",}}>
+        <div>
             <Header />
             <Outlet />
             <footer>
