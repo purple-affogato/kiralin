@@ -11,7 +11,7 @@ function Homepage(){
             <h1>How does Kiralin work</h1>
             <p>Using a combination of our own research and user polls, Kiralin offers users a wide range of data to help them 
                 figure out which companies would be them as a women or nonbinary person. The research team (which is actually just one 
-                person right now) provides a score from 1 to 5 and a short explanation on each company's diversity policies and 
+                person right now) provides information on each company's diversity policies and 
                 representation in leadership. Users can share their experiences by answering polls about 
                 their experiences working at certain companies. Kiralin's polls are focused on workplace culture, employee resource 
                 groups, recruitment practices, and feedback mechanisms. All user data is kept anonymous.</p>
