@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Template from "./Template.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import Homepage from "./Homepage.jsx";
@@ -12,6 +12,7 @@ function App() {
       <div style={{height: '100%', width: '100%'}}>
         <Routes>
               <Route path="/" element={<Template />} errorElement={<ErrorPage/>}>
+                <Route path="*" element={<ErrorPage />} />
                 <Route index element={<Homepage/>}/>
                 <Route path="companies" element={<Companies/>} />
                 <Route path="companies/:companyID" element={<CompanyPage/>}/>
