@@ -14,7 +14,7 @@ function Homepage(){
                 person right now) provides information on each company's diversity policies and 
                 representation in leadership. Users can share their experiences by answering polls about 
                 their experiences working at certain companies. Kiralin's polls are focused on workplace culture, employee resource 
-                groups, recruitment practices, and feedback mechanisms. All user data is kept anonymous.</p>
+                groups, and feedback mechanisms. All user data is kept anonymous.</p>
         </div>
     );
 }
