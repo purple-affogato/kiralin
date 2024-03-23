@@ -38,7 +38,7 @@ export default function CompanyPage() {
             <FMSection y1={company.fm1_y} n1={company.fm1_n} y2={company.fm2_y} n2={company.fm2_n} id={companyID} />
 
             <h2>Diversity Policies</h2>
-            <p>{company.dp1 ? "There diversity policies being implemented at this company." : "There are no diversity policies being implemented at this company."}</p>
+            <p>{company.dp1 ? "There are diversity policies being implemented at this company." : "There are no diversity policies being implemented at this company."}</p>
             <p>{company.dp2}</p>
             <h2>Representation in Leadership</h2>
             <p>{company.rep_w} out of {company.rep_t} of this company's executive leadership are women or nonbinary people.</p>
